@@ -48,7 +48,9 @@
     "isomorphic-fetch": "^2.2.1",
     "jquery": "1.12.1",
     "js-cookie": "^2.2.0",
-    "moment": "^2.22.2"
+    "layui-src": "^2.4.5",
+    "moment": "^2.22.2",
+    "page": "^1.11.2"
   },
   "browserslist": [
     "defaults",

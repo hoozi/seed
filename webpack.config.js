@@ -123,6 +123,8 @@ module.exports = {
             'jquery': path.resolve(__dirname, './node_modules/jquery'),
             'backbone': path.resolve(__dirname, './node_modules/backbone'),
             'bootstrap': path.resolve(__dirname, './node_modules/bootstrap'),
+            'layui':  path.resolve(__dirname, './node_modules/layui-src/dist'),
+            '@layui': path.resolve(__dirname, './node_modules/layui-src/dist/lay/modules'),
             'underscore': path.resolve(__dirname, './node_modules/underscore'),
             '@': path.resolve(__dirname, './src')
         },
@@ -154,7 +156,8 @@ module.exports = {
         new webpack.ProvidePlugin({
             'jQuery': 'jquery',
             '_': 'underscore',
-            '$': 'jquery'
+            '$': 'jquery',
+            'jquery': 'jquery'
         }),
         new webpack.HotModuleReplacementPlugin(),
         new UglifyJSPlugin({
