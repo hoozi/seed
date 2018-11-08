@@ -1,0 +1,100 @@
+<div class="layout-page-banner index-banner">
+  <div class="layout-page-banner-text">
+    <h1>优质服务，追求卓越</h1>
+    <p>Quality service, The pursuit of excellence</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="alert alert-warning mb0 nbrr"><i class="iconfont icon-info-circle-fill"></i> 通知公告内容<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+</div>
+
+<div class="section section-service pt76 pb76">
+  <div class="container">
+    <div class="section-header mb32">
+      <h2 class="section-title text-center">在线服务</h2>
+      <p class="section-title-sub text-center">SERVICE</p>
+    </div>
+    
+    <div class="row">
+      <%_.each(services, service =>{%>
+      <div class="col-md-<%=12/services.length%> mb16">
+        <div class="service-grid">
+          <div class="service-grid-header">
+            <i class="iconfont icon-<%=service.icon%>"></i>
+            <p><%=service.name%></p>
+          </div>
+          <div class="service-grid-body">
+            <%if(service.links && service.links.length >0) {%>
+            <ul class="service-list">
+              <%_.each(service.links, (item, index) => {%>
+              <li><a href="<%=item.href%>"><%=item.name%></a></li>
+              <%if(index !== (service.links.length-1)) {%>
+              <li class="split">|</li>
+              <%}%>
+              <%})%>
+            </ul>
+            <%}%>
+          </div>
+        </div>
+      </div>
+      <%})%>
+    </div>
+  </div>
+</div>
+
+<div class="section section-news pt76 pb76">
+  <div class="container">
+    <div class="section-header mb32">
+      <h2 class="section-title text-center">新闻中心</h2>
+      <p class="section-title-sub text-center">NEWS</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb16">
+        <div class="news-grid">
+          <a href="###" class="news-img">
+            <div class="news-img-wrapper">
+              <img src="http://h.hiphotos.baidu.com/image/h%3D300/sign=b12ec0dd93510fb367197197e932c893/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg" alt="">
+            </div>
+            <p>标题标题</p>
+          </a>
+          <ul class="news-list mt16">
+            <li><a href="###">【行业资讯】标题标题</a></li>
+            <li><a href="###">【行业资讯】标题标题</a></li>
+            <li><a href="###">【行业资讯】标题标题</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 mb16">
+        <div class="news-grid">
+          <a href="###" class="news-img">
+            <div class="news-img-wrapper">
+              <img src="http://h.hiphotos.baidu.com/image/h%3D300/sign=b12ec0dd93510fb367197197e932c893/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg" alt="">
+            </div>
+            <p>标题标题</p>
+          </a>
+          <ul class="news-list mt16">
+            <li><a href="###">【通知公告】标题标题</a></li>
+            <li><a href="###">【行业资讯】标题标题</a></li>
+            <li><a href="###">【港口资讯】标题标题</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 mb16">
+        <div class="news-grid">
+          <a href="###" class="news-img">
+            <div class="news-img-wrapper">
+              <img src="http://h.hiphotos.baidu.com/image/h%3D300/sign=b12ec0dd93510fb367197197e932c893/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg" alt="">
+            </div>
+            <p>标题标题</p>
+          </a>
+          <ul class="news-list mt16">
+            <li><a href="###">【通知公告】标题标题</a></li>
+            <li><a href="###">【行业资讯】标题标题</a></li>
+            <li><a href="###">【港口资讯】标题标题</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
